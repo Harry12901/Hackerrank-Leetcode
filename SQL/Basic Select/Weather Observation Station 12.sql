@@ -15,3 +15,6 @@ The STATION table is described as follows:
 where LAT_N is the northern latitude and LONG_W is the western longitude.
 */
 
+SELECT DISTINCT(CITY)
+FROM STATION
+WHERE SUBSTRING(CITY,1,1) NOT IN ('a','e','i','o','u') AND SUBSTRING(CITY,-1,1) NOT IN ('a','e','i','o','u');
