@@ -34,7 +34,15 @@ def rotLeft(a, d):
         if(d>=len(a)):
             d=0
     return c
-    # Write your code here
+
+####ALT
+# def rotLeft(arr, d):
+#     for i in range(d):
+#         arr.append(arr[i])
+
+#     for x in arr[d:]:
+#         print(x, end=' ')
+    
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
